@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Medicamentos</title>
+</head>
+<body>
+    <h1>Venta de Medicamentos</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre del Medicamento</th>
+                <th>Precio</th>
+                <th>Categoría</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for medicamento in medicamentos %}
+            <tr>
+                <td>{{ medicamento.nombre }}</td>
+                <td>{{ medicamento.precio }}</td>
+                <td>{{ medicamento.categoria }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
