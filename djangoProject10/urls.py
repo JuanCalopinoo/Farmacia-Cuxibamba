@@ -19,10 +19,17 @@ from django.urls import path
 from Farmaciaa import views
 
 urlpatterns = [
+    # Ruta para el admin
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('loogin/', views.login),
-    path('re/', views.re),
+    path('', views.home, name='home'),
+    path('login/', views.login, name='login'),
+    path('producto/', views.producto, name='producto'),
+    path('pedidos/', views.lista_pedidos, name='lista_pedidos'),
+    path('inventario_sucursal/', views.inventario_sucursal, name='inventario_sucursal'),
+    path('venta_medicamentos/', views.venta_medicamentos, name='venta_medicamentos'),
+    path('transferencia_medicamentos/', views.transferencia_medicamentos, name='transferencia_medicamentos'),
+    path('realizar_pedido/', views.realizar_pedido, name='realizar_pedido'),
+
 
 
 
