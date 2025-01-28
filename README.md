@@ -1,4 +1,4 @@
-# Farmacia-Cuxibamba
+# Farmacia-Cuxibamba by Juan Calopino
 # Sistema de Gestión para una Cadena de Farmacias
 ![image](https://github.com/user-attachments/assets/b9fc00b3-f076-45be-893f-a6dbdf40c94f)
 
